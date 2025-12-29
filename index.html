@@ -4,40 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ملف إنجاز المعلمة فريال الغماري</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        /* رموز Font Awesome بدلاً من استخدام مكتبة خارجية */
-        @font-face {
-            font-family: 'FontAwesome';
-            src: url('data:application/font-woff2;charset=utf-8;base64,d09GMgABAAAAAA8wABEAAAAAI4wAAAPuAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGh4bwQgGYACCUhEICo0MiqULC4NGAAE2AiQDiAwEIAWNJgeJKQyCJjt6FezYiaG1D6C7VfD///8/kiMqG0Qjq7u2KJI1gyyJhFXySqKEUUvYFZ/f/2+SR7s5q4G3gAZ1PNwqyDxGdHSjAIE9gJh2vDRkUZSv0XxE57j6XezWxxq6Jm74slMQnW+js0tgU0W0bW3uBpMhDZ8e0rJLjV+VHhZfXZ6Z6+/Pk5+V76qF/22yD4U+ACQfw8EKwEMCSPiI/wA5hhUA9h8AwAQ1CoB7S2oUwMOKdFTxbycd/w3QvA0Fyn2iFBwA4iOCDj72CSAAATt2gG7/DgDKCADg4hIq3w8Z2AQ2GQ4ZKBnY2QAFZCGoUgC3GQLPpANP5ALPJAF/Q8A7UeC9A5S7h3j18uv1r1D8uM+XkqTpyFEhKSVHVH/K0IskKNglxYb+3X5T1wLEnD5OEO+J5knhHn/nn3hHc3d3P15qMxSKYkKRtig2Fa26qpiJzUbMhLJFzJKqJbW2pI4tdZ2mWyQouqV7CkXRbVQ0gS0iSYpUqVKb2Uy3yFR0S/fqnkJRdHf3Oru7j9q2x3lWea29/1r2WmvNs85iMQEjvBp7vL41Vl3Wt6Jt8yzN08yz03d7nGelp7dHnXkmlnmmeXrU3+O8Wj1N0lS6zWqS3ta9vvN2rx91fo3zrHp8s3o+v86vUa3O79zq/JVXXs99q/XLGXWe88x1nlRZ+Y9aWZIq0SYSBAAAAAAAAAAQAAQAAAEAAAAAADoAABoAAOoAAGQCAPwDAHwDAPgEAAgCABgFAOgFAPwGAPwCABgGAPwCADYQAHwXAPggAOBKAPBPALDYAVgCAfAZADAfADAfAOgVABYOgN8CgB0DgC0DgC8EgKkE4H8EAPgAAPgEAPgdAOgPAKwEACwWAPwMAPA8APDfAPg0ANB/ACAJAECtALDaAVgCABYOgN8CADwIAKABAEgMABgEAAgUAGB7A2B5A2B5A4B9A4B9BEAFAHwCAPAFAPBHAOBBAPBdAOgBAEw1ANwHAHwFABgAABAEAACDBwB4AADqAQD7AQC6AQBEAQCCAYBCAAAoAMBBAAAzAYB1AJAAAAYVgAIA');
-            font-weight: normal;
-            font-style: normal;
-        }
-        
-        .fa {
-            display: inline-block;
-            font: normal normal normal 14px/1 FontAwesome;
-            font-size: inherit;
-            text-rendering: auto;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-        
-        .fa-book-open:before { content: "\f518"; }
-        .fa-font:before { content: "\f031"; }
-        .fa-language:before { content: "\f1ab"; }
-        .fa-quran:before { content: "\f687"; }
-        .fa-calculator:before { content: "\f1ec"; }
-        .fa-flask:before { content: "\f0c3"; }
-        .fa-chalkboard-teacher:before { content: "\f51c"; }
-        .fa-plus-circle:before { content: "\f055"; }
-        .fa-print:before { content: "\f02f"; }
-        .fa-magic:before { content: "\f0d0"; }
-        .fa-trash:before { content: "\f1f8"; }
-        .fa-image:before { content: "\f03e"; }
-        .fa-cloud-upload-alt:before { content: "\f382"; }
-        .fa-edit:before { content: "\f044"; }
-        .fa-save:before { content: "\f0c7"; }
-
         * {
             margin: 0;
             padding: 0;
@@ -45,12 +14,26 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #0c1a25 0%, #162b3a 50%, #1c3b4f 100%);
+            font-family: 'Cairo', sans-serif;
+            background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
             color: #e0e0e0;
             line-height: 1.6;
             min-height: 100vh;
+            position: relative;
             padding-bottom: 30px;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 15% 85%, rgba(15, 32, 39, 0.8) 0%, transparent 60%),
+                radial-gradient(circle at 85% 15%, rgba(44, 83, 100, 0.6) 0%, transparent 60%);
+            z-index: -1;
         }
 
         .container {
@@ -61,7 +44,7 @@
 
         /* رأس الصفحة */
         header {
-            background: linear-gradient(45deg, rgba(12, 26, 37, 0.9) 0%, rgba(28, 59, 79, 0.9) 100%);
+            background: linear-gradient(45deg, rgba(15, 32, 39, 0.9) 0%, rgba(32, 58, 67, 0.9) 100%);
             color: #ffffff;
             padding: 30px 20px;
             border-radius: 12px;
@@ -88,7 +71,7 @@
 
         /* أقسام المواد */
         .subject-section {
-            background: linear-gradient(145deg, rgba(20, 35, 45, 0.95) 0%, rgba(30, 50, 65, 0.95) 100%);
+            background: linear-gradient(145deg, rgba(25, 40, 50, 0.95) 0%, rgba(35, 50, 60, 0.95) 100%);
             border-radius: 12px;
             padding: 25px;
             margin-bottom: 25px;
@@ -147,7 +130,6 @@
             color: #ffffff;
             position: relative;
             padding-bottom: 8px;
-            flex-grow: 1;
         }
 
         .subject-title::after {
@@ -193,7 +175,7 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             transition: all 0.3s ease;
             position: relative;
-            height: 320px;
+            height: 300px;
             display: flex;
             flex-direction: column;
             background: rgba(30, 45, 55, 0.7);
@@ -208,7 +190,6 @@
             height: 180px;
             overflow: hidden;
             position: relative;
-            background: rgba(0, 0, 0, 0.2);
         }
 
         .image-container img {
@@ -250,12 +231,6 @@
             text-align: left;
         }
 
-        .image-actions {
-            display: flex;
-            gap: 8px;
-            margin-top: 10px;
-        }
-
         /* أزرار موحدة */
         .btn {
             display: inline-flex;
@@ -265,61 +240,29 @@
             background: linear-gradient(135deg, #1a5276 0%, #154360 100%);
             color: white;
             border: none;
-            padding: 10px 18px;
-            border-radius: 6px;
+            padding: 12px 24px;
+            border-radius: 8px;
             cursor: pointer;
-            font-size: 0.95rem;
+            font-size: 1rem;
             font-weight: 600;
             transition: all 0.3s ease;
             text-decoration: none;
-            box-shadow: 0 4px 8px rgba(26, 82, 118, 0.3);
-            font-family: inherit;
+            box-shadow: 0 4px 12px rgba(26, 82, 118, 0.3);
+            font-family: 'Cairo', sans-serif;
         }
 
         .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(26, 82, 118, 0.4);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(26, 82, 118, 0.4);
+            background: linear-gradient(135deg, #154360 0%, #1a5276 100%);
         }
 
         .btn i {
-            font-size: 1rem;
-        }
-
-        .btn-small {
-            padding: 6px 12px;
-            font-size: 0.85rem;
+            font-size: 1.1rem;
         }
 
         .add-btn {
             margin-top: 15px;
-        }
-
-        .action-btn {
-            padding: 8px 15px;
-            border-radius: 6px;
-            border: none;
-            cursor: pointer;
-            font-size: 0.85rem;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .edit-btn {
-            background: linear-gradient(135deg, #196f3d 0%, #145a32 100%);
-            color: white;
-        }
-
-        .delete-btn {
-            background: linear-gradient(135deg, #922b21 0%, #7b241c 100%);
-            color: white;
-        }
-
-        .edit-btn:hover, .delete-btn:hover {
-            transform: translateY(-2px);
-            opacity: 0.9;
         }
 
         /* أزرار التحكم */
@@ -333,7 +276,7 @@
 
         /* نموذج إضافة صور */
         .add-image-form {
-            background: rgba(30, 45, 55, 0.95);
+            background: rgba(30, 45, 55, 0.9);
             border-radius: 10px;
             padding: 20px;
             margin-top: 20px;
@@ -360,10 +303,10 @@
         .form-control {
             width: 100%;
             padding: 10px 12px;
-            background: rgba(20, 30, 40, 0.8);
+            background: rgba(20, 30, 40, 0.7);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 6px;
-            font-family: inherit;
+            font-family: 'Cairo', sans-serif;
             font-size: 0.95rem;
             transition: border-color 0.3s ease;
             color: #e0e0e0;
@@ -380,61 +323,6 @@
             resize: vertical;
         }
 
-        .file-input-container {
-            position: relative;
-            width: 100%;
-        }
-
-        .file-input-label {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            padding: 15px;
-            background: rgba(26, 82, 118, 0.2);
-            border: 2px dashed #1a5276;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            color: #b0bec5;
-            text-align: center;
-            flex-direction: column;
-        }
-
-        .file-input-label:hover {
-            background: rgba(26, 82, 118, 0.3);
-            border-color: #2e86c1;
-        }
-
-        .file-input-label i {
-            font-size: 2rem;
-            color: #2e86c1;
-        }
-
-        .file-input {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            cursor: pointer;
-        }
-
-        .preview-container {
-            margin-top: 15px;
-            text-align: center;
-            display: none;
-        }
-
-        .image-preview {
-            max-width: 100%;
-            max-height: 200px;
-            border-radius: 6px;
-            margin-top: 10px;
-            border: 2px solid rgba(255, 255, 255, 0.1);
-        }
-
         .form-actions {
             display: flex;
             gap: 10px;
@@ -447,6 +335,7 @@
 
         .submit-btn:hover {
             background: linear-gradient(135deg, #145a32 0%, #196f3d 100%);
+            box-shadow: 0 6px 16px rgba(25, 111, 61, 0.4);
         }
 
         .cancel-btn {
@@ -455,10 +344,11 @@
 
         .cancel-btn:hover {
             background: linear-gradient(135deg, #303030 0%, #424242 100%);
+            box-shadow: 0 6px 16px rgba(66, 66, 66, 0.4);
         }
 
         .hidden {
-            display: none !important;
+            display: none;
         }
 
         /* الطباعة */
@@ -466,6 +356,10 @@
             body {
                 background: white !important;
                 color: #000 !important;
+            }
+            
+            body::before {
+                display: none;
             }
             
             header {
@@ -476,7 +370,7 @@
                 box-shadow: none;
             }
             
-            .controls, .add-btn, .add-image-form, .image-actions {
+            .controls, .add-btn, .add-image-form {
                 display: none !important;
             }
             
@@ -529,7 +423,7 @@
             color: rgba(255, 255, 255, 0.6);
             font-size: 0.9rem;
             padding: 20px;
-            background: rgba(12, 26, 37, 0.7);
+            background: rgba(15, 32, 39, 0.7);
             border-radius: 10px;
             border: 1px solid rgba(255, 255, 255, 0.05);
         }
@@ -583,6 +477,13 @@
         }
 
         /* تحسينات إضافية */
+        .section-description {
+            color: #b0bec5;
+            margin-bottom: 20px;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
         .no-activities {
             text-align: center;
             padding: 30px;
@@ -598,41 +499,12 @@
             color: #78909c;
             margin-top: 5px;
         }
-
-        .activity-counter {
-            background: rgba(26, 82, 118, 0.3);
-            padding: 4px 10px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            margin-right: 10px;
-        }
-
-        .error-message {
-            color: #e74c3c;
-            font-size: 0.9rem;
-            margin-top: 5px;
-            display: none;
-        }
-
-        .success-message {
-            color: #27ae60;
-            font-size: 0.9rem;
-            margin-top: 5px;
-            display: none;
-        }
-
-        .file-name {
-            margin-top: 8px;
-            font-size: 0.9rem;
-            color: #2e86c1;
-            display: none;
-        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1><i class="fa fa-book-open"></i> ملف إنجاز المعلمة فريال الغماري</h1>
+            <h1><i class="fas fa-book-open"></i> ملف إنجاز المعلمة فريال الغماري</h1>
             <p>توثيق للجهود والأنشطة التعليمية خلال العام الدراسي</p>
         </header>
 
@@ -640,13 +512,12 @@
         <section class="subject-section arabic" id="arabic">
             <div class="subject-header">
                 <div class="subject-icon">
-                    <i class="fa fa-font"></i>
+                    <i class="fas fa-font"></i>
                 </div>
                 <div>
                     <h2 class="subject-title">اللغة العربية</h2>
                     <div class="image-count" id="arabic-count">لا توجد أنشطة مضافة بعد</div>
                 </div>
-                <span class="activity-counter" id="arabic-counter">0</span>
             </div>
             <div class="content-box">
                 <h3 class="content-title">حرف الراء - أنشطة تعليمية</h3>
@@ -654,44 +525,28 @@
                     <!-- الصور المضافة تظهر هنا -->
                 </div>
                 <div id="arabic-empty" class="no-activities">
-                    <i class="fa fa-image" style="font-size: 2rem; margin-bottom: 10px; display: block; color: #546e7a;"></i>
+                    <i class="fas fa-image" style="font-size: 2rem; margin-bottom: 10px; display: block; color: #546e7a;"></i>
                     لم يتم إضافة أي أنشطة بعد. ابدأ بإضافة نشاطك الأول.
                 </div>
                 <button class="btn add-btn" onclick="showAddForm('arabic')">
-                    <i class="fa fa-plus-circle"></i> إضافة نشاط جديد
+                    <i class="fas fa-plus-circle"></i> إضافة نشاط جديد
                 </button>
                 <div id="arabic-form" class="add-image-form hidden">
                     <div class="form-group">
                         <label>عنوان النشاط:</label>
                         <input type="text" class="form-control" id="arabic-title" placeholder="مثال: نشاط حرف الراء مع الطالبات">
-                        <div id="arabic-title-error" class="error-message">يرجى إدخال عنوان النشاط</div>
                     </div>
                     <div class="form-group">
                         <label>النص الوصفي للنشاط:</label>
                         <textarea class="form-control" id="arabic-description" placeholder="أدخل وصفاً مفصلاً للنشاط، الأهداف، الطريقة، والنتائج..."></textarea>
                     </div>
                     <div class="form-group">
-                        <label>رفع صورة النشاط:</label>
-                        <div class="file-input-container">
-                            <div class="file-input-label">
-                                <i class="fa fa-cloud-upload-alt"></i>
-                                <span>انقر لرفع صورة من جهازك</span>
-                                <div id="arabic-file-name" class="file-name"></div>
-                            </div>
-                            <input type="file" id="arabic-file" accept="image/*" class="file-input">
-                        </div>
-                        <div id="arabic-file-error" class="error-message">يرجى اختيار صورة</div>
-                        <div class="preview-container" id="arabic-preview-container">
-                            <img id="arabic-preview" class="image-preview" alt="معاينة الصورة">
-                        </div>
+                        <label>رابط الصورة:</label>
+                        <input type="text" class="form-control" id="arabic-url" placeholder="https://example.com/image.jpg">
+                        <small style="color: #78909c; display: block; margin-top: 5px;">يمكنك استخدام رابط صورة من الإنترنت</small>
                     </div>
-                    <div class="form-group">
-                        <label>تاريخ النشاط:</label>
-                        <input type="date" class="form-control" id="arabic-date">
-                    </div>
-                    <div id="arabic-success" class="success-message">تم إضافة النشاط بنجاح!</div>
                     <div class="form-actions">
-                        <button class="btn submit-btn" onclick="addActivity('arabic')">إضافة النشاط</button>
+                        <button class="btn submit-btn" onclick="addImage('arabic')">إضافة النشاط</button>
                         <button class="btn cancel-btn" onclick="hideAddForm('arabic')">إلغاء</button>
                     </div>
                 </div>
@@ -702,56 +557,39 @@
         <section class="subject-section english" id="english">
             <div class="subject-header">
                 <div class="subject-icon">
-                    <i class="fa fa-language"></i>
+                    <i class="fas fa-language"></i>
                 </div>
                 <div>
                     <h2 class="subject-title">اللغة الإنجليزية</h2>
                     <div class="image-count" id="english-count">لا توجد أنشطة مضافة بعد</div>
                 </div>
-                <span class="activity-counter" id="english-counter">0</span>
             </div>
             <div class="content-box">
                 <h3 class="content-title">Letter A - Activities</h3>
                 <div class="image-grid" id="english-images"></div>
                 <div id="english-empty" class="no-activities">
-                    <i class="fa fa-image" style="font-size: 2rem; margin-bottom: 10px; display: block; color: #546e7a;"></i>
+                    <i class="fas fa-image" style="font-size: 2rem; margin-bottom: 10px; display: block; color: #546e7a;"></i>
                     لم يتم إضافة أي أنشطة بعد. ابدأ بإضافة نشاطك الأول.
                 </div>
                 <button class="btn add-btn" onclick="showAddForm('english')">
-                    <i class="fa fa-plus-circle"></i> Add New Activity
+                    <i class="fas fa-plus-circle"></i> Add New Activity
                 </button>
                 <div id="english-form" class="add-image-form hidden">
                     <div class="form-group">
                         <label>Activity Title:</label>
                         <input type="text" class="form-control" id="english-title" placeholder="Example: Letter A activity with students">
-                        <div id="english-title-error" class="error-message">Please enter activity title</div>
                     </div>
                     <div class="form-group">
                         <label>Activity Description:</label>
                         <textarea class="form-control" id="english-description" placeholder="Enter detailed description of the activity..."></textarea>
                     </div>
                     <div class="form-group">
-                        <label>Upload Activity Image:</label>
-                        <div class="file-input-container">
-                            <div class="file-input-label">
-                                <i class="fa fa-cloud-upload-alt"></i>
-                                <span>Click to upload image from your device</span>
-                                <div id="english-file-name" class="file-name"></div>
-                            </div>
-                            <input type="file" id="english-file" accept="image/*" class="file-input">
-                        </div>
-                        <div id="english-file-error" class="error-message">Please select an image</div>
-                        <div class="preview-container" id="english-preview-container">
-                            <img id="english-preview" class="image-preview" alt="Image Preview">
-                        </div>
+                        <label>Image URL:</label>
+                        <input type="text" class="form-control" id="english-url" placeholder="https://example.com/image.jpg">
+                        <small style="color: #78909c; display: block; margin-top: 5px;">You can use an image link from the internet</small>
                     </div>
-                    <div class="form-group">
-                        <label>Activity Date:</label>
-                        <input type="date" class="form-control" id="english-date">
-                    </div>
-                    <div id="english-success" class="success-message">Activity added successfully!</div>
                     <div class="form-actions">
-                        <button class="btn submit-btn" onclick="addActivity('english')">Add Activity</button>
+                        <button class="btn submit-btn" onclick="addImage('english')">Add Activity</button>
                         <button class="btn cancel-btn" onclick="hideAddForm('english')">Cancel</button>
                     </div>
                 </div>
@@ -762,56 +600,39 @@
         <section class="subject-section quran" id="quran">
             <div class="subject-header">
                 <div class="subject-icon">
-                    <i class="fa fa-quran"></i>
+                    <i class="fas fa-quran"></i>
                 </div>
                 <div>
                     <h2 class="subject-title">القرآن الكريم</h2>
                     <div class="image-count" id="quran-count">لا توجد أنشطة مضافة بعد</div>
                 </div>
-                <span class="activity-counter" id="quran-counter">0</span>
             </div>
             <div class="content-box">
                 <h3 class="content-title">سورة الفاتحة - أنشطة الحفظ والتلاوة</h3>
                 <div class="image-grid" id="quran-images"></div>
                 <div id="quran-empty" class="no-activities">
-                    <i class="fa fa-image" style="font-size: 2rem; margin-bottom: 10px; display: block; color: #546e7a;"></i>
+                    <i class="fas fa-image" style="font-size: 2rem; margin-bottom: 10px; display: block; color: #546e7a;"></i>
                     لم يتم إضافة أي أنشطة بعد. ابدأ بإضافة نشاطك الأول.
                 </div>
                 <button class="btn add-btn" onclick="showAddForm('quran')">
-                    <i class="fa fa-plus-circle"></i> إضافة نشاط قرآني
+                    <i class="fas fa-plus-circle"></i> إضافة نشاط قرآني
                 </button>
                 <div id="quran-form" class="add-image-form hidden">
                     <div class="form-group">
                         <label>عنوان النشاط:</label>
                         <input type="text" class="form-control" id="quran-title" placeholder="مثال: نشاط حفظ سورة الفاتحة">
-                        <div id="quran-title-error" class="error-message">يرجى إدخال عنوان النشاط</div>
                     </div>
                     <div class="form-group">
                         <label>النص الوصفي للنشاط:</label>
                         <textarea class="form-control" id="quran-description" placeholder="أدخل وصفاً مفصلاً للنشاط القرآني..."></textarea>
                     </div>
                     <div class="form-group">
-                        <label>رفع صورة النشاط:</label>
-                        <div class="file-input-container">
-                            <div class="file-input-label">
-                                <i class="fa fa-cloud-upload-alt"></i>
-                                <span>انقر لرفع صورة من جهازك</span>
-                                <div id="quran-file-name" class="file-name"></div>
-                            </div>
-                            <input type="file" id="quran-file" accept="image/*" class="file-input">
-                        </div>
-                        <div id="quran-file-error" class="error-message">يرجى اختيار صورة</div>
-                        <div class="preview-container" id="quran-preview-container">
-                            <img id="quran-preview" class="image-preview" alt="معاينة الصورة">
-                        </div>
+                        <label>رابط الصورة:</label>
+                        <input type="text" class="form-control" id="quran-url" placeholder="https://example.com/image.jpg">
+                        <small style="color: #78909c; display: block; margin-top: 5px;">يمكنك استخدام رابط صورة من الإنترنت</small>
                     </div>
-                    <div class="form-group">
-                        <label>تاريخ النشاط:</label>
-                        <input type="date" class="form-control" id="quran-date">
-                    </div>
-                    <div id="quran-success" class="success-message">تم إضافة النشاط بنجاح!</div>
                     <div class="form-actions">
-                        <button class="btn submit-btn" onclick="addActivity('quran')">إضافة النشاط</button>
+                        <button class="btn submit-btn" onclick="addImage('quran')">إضافة النشاط</button>
                         <button class="btn cancel-btn" onclick="hideAddForm('quran')">إلغاء</button>
                     </div>
                 </div>
@@ -822,56 +643,39 @@
         <section class="subject-section math" id="math">
             <div class="subject-header">
                 <div class="subject-icon">
-                    <i class="fa fa-calculator"></i>
+                    <i class="fas fa-calculator"></i>
                 </div>
                 <div>
                     <h2 class="subject-title">الرياضيات</h2>
                     <div class="image-count" id="math-count">لا توجد أنشطة مضافة بعد</div>
                 </div>
-                <span class="activity-counter" id="math-counter">0</span>
             </div>
             <div class="content-box">
                 <h3 class="content-title">جدول الضرب - أنشطة تفاعلية</h3>
                 <div class="image-grid" id="math-images"></div>
                 <div id="math-empty" class="no-activities">
-                    <i class="fa fa-image" style="font-size: 2rem; margin-bottom: 10px; display: block; color: #546e7a;"></i>
+                    <i class="fas fa-image" style="font-size: 2rem; margin-bottom: 10px; display: block; color: #546e7a;"></i>
                     لم يتم إضافة أي أنشطة بعد. ابدأ بإضافة نشاطك الأول.
                 </div>
                 <button class="btn add-btn" onclick="showAddForm('math')">
-                    <i class="fa fa-plus-circle"></i> إضافة نشاط رياضي
+                    <i class="fas fa-plus-circle"></i> إضافة نشاط رياضي
                 </button>
                 <div id="math-form" class="add-image-form hidden">
                     <div class="form-group">
                         <label>عنوان النشاط:</label>
                         <input type="text" class="form-control" id="math-title" placeholder="مثال: نشاط جدول الضرب">
-                        <div id="math-title-error" class="error-message">يرجى إدخال عنوان النشاط</div>
                     </div>
                     <div class="form-group">
                         <label>النص الوصفي للنشاط:</label>
                         <textarea class="form-control" id="math-description" placeholder="أدخل وصفاً مفصلاً للنشاط الرياضي..."></textarea>
                     </div>
                     <div class="form-group">
-                        <label>رفع صورة النشاط:</label>
-                        <div class="file-input-container">
-                            <div class="file-input-label">
-                                <i class="fa fa-cloud-upload-alt"></i>
-                                <span>انقر لرفع صورة من جهازك</span>
-                                <div id="math-file-name" class="file-name"></div>
-                            </div>
-                            <input type="file" id="math-file" accept="image/*" class="file-input">
-                        </div>
-                        <div id="math-file-error" class="error-message">يرجى اختيار صورة</div>
-                        <div class="preview-container" id="math-preview-container">
-                            <img id="math-preview" class="image-preview" alt="معاينة الصورة">
-                        </div>
+                        <label>رابط الصورة:</label>
+                        <input type="text" class="form-control" id="math-url" placeholder="https://example.com/image.jpg">
+                        <small style="color: #78909c; display: block; margin-top: 5px;">يمكنك استخدام رابط صورة من الإنترنت</small>
                     </div>
-                    <div class="form-group">
-                        <label>تاريخ النشاط:</label>
-                        <input type="date" class="form-control" id="math-date">
-                    </div>
-                    <div id="math-success" class="success-message">تم إضافة النشاط بنجاح!</div>
                     <div class="form-actions">
-                        <button class="btn submit-btn" onclick="addActivity('math')">إضافة النشاط</button>
+                        <button class="btn submit-btn" onclick="addImage('math')">إضافة النشاط</button>
                         <button class="btn cancel-btn" onclick="hideAddForm('math')">إلغاء</button>
                     </div>
                 </div>
@@ -882,56 +686,39 @@
         <section class="subject-section science" id="science">
             <div class="subject-header">
                 <div class="subject-icon">
-                    <i class="fa fa-flask"></i>
+                    <i class="fas fa-flask"></i>
                 </div>
                 <div>
                     <h2 class="subject-title">العلوم</h2>
                     <div class="image-count" id="science-count">لا توجد أنشطة مضافة بعد</div>
                 </div>
-                <span class="activity-counter" id="science-counter">0</span>
             </div>
             <div class="content-box">
                 <h3 class="content-title">أجزاء النبات - تجارب علمية</h3>
                 <div class="image-grid" id="science-images"></div>
                 <div id="science-empty" class="no-activities">
-                    <i class="fa fa-image" style="font-size: 2rem; margin-bottom: 10px; display: block; color: #546e7a;"></i>
+                    <i class="fas fa-image" style="font-size: 2rem; margin-bottom: 10px; display: block; color: #546e7a;"></i>
                     لم يتم إضافة أي أنشطة بعد. ابدأ بإضافة نشاطك الأول.
                 </div>
                 <button class="btn add-btn" onclick="showAddForm('science')">
-                    <i class="fa fa-plus-circle"></i> إضافة تجربة علمية
+                    <i class="fas fa-plus-circle"></i> إضافة تجربة علمية
                 </button>
                 <div id="science-form" class="add-image-form hidden">
                     <div class="form-group">
                         <label>عنوان النشاط:</label>
                         <input type="text" class="form-control" id="science-title" placeholder="مثال: تجربة أجزاء النبات">
-                        <div id="science-title-error" class="error-message">يرجى إدخال عنوان النشاط</div>
                     </div>
                     <div class="form-group">
                         <label>النص الوصفي للنشاط:</label>
                         <textarea class="form-control" id="science-description" placeholder="أدخل وصفاً مفصلاً للتجربة العلمية..."></textarea>
                     </div>
                     <div class="form-group">
-                        <label>رفع صورة النشاط:</label>
-                        <div class="file-input-container">
-                            <div class="file-input-label">
-                                <i class="fa fa-cloud-upload-alt"></i>
-                                <span>انقر لرفع صورة من جهازك</span>
-                                <div id="science-file-name" class="file-name"></div>
-                            </div>
-                            <input type="file" id="science-file" accept="image/*" class="file-input">
-                        </div>
-                        <div id="science-file-error" class="error-message">يرجى اختيار صورة</div>
-                        <div class="preview-container" id="science-preview-container">
-                            <img id="science-preview" class="image-preview" alt="معاينة الصورة">
-                        </div>
+                        <label>رابط الصورة:</label>
+                        <input type="text" class="form-control" id="science-url" placeholder="https://example.com/image.jpg">
+                        <small style="color: #78909c; display: block; margin-top: 5px;">يمكنك استخدام رابط صورة من الإنترنت</small>
                     </div>
-                    <div class="form-group">
-                        <label>تاريخ النشاط:</label>
-                        <input type="date" class="form-control" id="science-date">
-                    </div>
-                    <div id="science-success" class="success-message">تم إضافة النشاط بنجاح!</div>
                     <div class="form-actions">
-                        <button class="btn submit-btn" onclick="addActivity('science')">إضافة النشاط</button>
+                        <button class="btn submit-btn" onclick="addImage('science')">إضافة النشاط</button>
                         <button class="btn cancel-btn" onclick="hideAddForm('science')">إلغاء</button>
                     </div>
                 </div>
@@ -942,56 +729,39 @@
         <section class="subject-section activities" id="activities">
             <div class="subject-header">
                 <div class="subject-icon">
-                    <i class="fa fa-chalkboard-teacher"></i>
+                    <i class="fas fa-chalkboard-teacher"></i>
                 </div>
                 <div>
                     <h2 class="subject-title">نشاطات المعلمة في المدرسة</h2>
                     <div class="image-count" id="activities-count">لا توجد أنشطة مضافة بعد</div>
                 </div>
-                <span class="activity-counter" id="activities-counter">0</span>
             </div>
             <div class="content-box">
                 <h3 class="content-title">إسهامات ومبادرات المعلمة فريال الغماري</h3>
                 <div class="image-grid" id="activities-images"></div>
                 <div id="activities-empty" class="no-activities">
-                    <i class="fa fa-image" style="font-size: 2rem; margin-bottom: 10px; display: block; color: #546e7a;"></i>
+                    <i class="fas fa-image" style="font-size: 2rem; margin-bottom: 10px; display: block; color: #546e7a;"></i>
                     لم يتم إضافة أي أنشطة بعد. ابدأ بإضافة نشاطك الأول.
                 </div>
                 <button class="btn add-btn" onclick="showAddForm('activities')">
-                    <i class="fa fa-plus-circle"></i> إضافة نشاط جديد
+                    <i class="fas fa-plus-circle"></i> إضافة نشاط جديد
                 </button>
                 <div id="activities-form" class="add-image-form hidden">
                     <div class="form-group">
                         <label>عنوان النشاط:</label>
                         <input type="text" class="form-control" id="activities-title" placeholder="مثال: المشاركة في اليوم الوطني">
-                        <div id="activities-title-error" class="error-message">يرجى إدخال عنوان النشاط</div>
                     </div>
                     <div class="form-group">
                         <label>النص الوصفي للنشاط:</label>
                         <textarea class="form-control" id="activities-description" placeholder="أدخل وصفاً مفصلاً للنشاط والإسهامات..."></textarea>
                     </div>
                     <div class="form-group">
-                        <label>رفع صورة النشاط:</label>
-                        <div class="file-input-container">
-                            <div class="file-input-label">
-                                <i class="fa fa-cloud-upload-alt"></i>
-                                <span>انقر لرفع صورة من جهازك</span>
-                                <div id="activities-file-name" class="file-name"></div>
-                            </div>
-                            <input type="file" id="activities-file" accept="image/*" class="file-input">
-                        </div>
-                        <div id="activities-file-error" class="error-message">يرجى اختيار صورة</div>
-                        <div class="preview-container" id="activities-preview-container">
-                            <img id="activities-preview" class="image-preview" alt="معاينة الصورة">
-                        </div>
+                        <label>رابط الصورة:</label>
+                        <input type="text" class="form-control" id="activities-url" placeholder="https://example.com/image.jpg">
+                        <small style="color: #78909c; display: block; margin-top: 5px;">يمكنك استخدام رابط صورة من الإنترنت</small>
                     </div>
-                    <div class="form-group">
-                        <label>تاريخ النشاط:</label>
-                        <input type="date" class="form-control" id="activities-date">
-                    </div>
-                    <div id="activities-success" class="success-message">تم إضافة النشاط بنجاح!</div>
                     <div class="form-actions">
-                        <button class="btn submit-btn" onclick="addActivity('activities')">إضافة النشاط</button>
+                        <button class="btn submit-btn" onclick="addImage('activities')">إضافة النشاط</button>
                         <button class="btn cancel-btn" onclick="hideAddForm('activities')">إلغاء</button>
                     </div>
                 </div>
@@ -1001,13 +771,10 @@
         <!-- أزرار التحكم -->
         <div class="controls">
             <button class="btn" onclick="printPortfolio()">
-                <i class="fa fa-print"></i> طباعة الملف
+                <i class="fas fa-print"></i> طباعة الملف
             </button>
-            <button class="btn" onclick="addDefaultActivities()">
-                <i class="fa fa-magic"></i> إضافة أنشطة افتراضية
-            </button>
-            <button class="btn" onclick="clearAllActivities()">
-                <i class="fa fa-trash"></i> حذف جميع الأنشطة
+            <button class="btn" onclick="addSampleData()">
+                <i class="fas fa-eye"></i> عرض أمثلة
             </button>
         </div>
 
@@ -1018,7 +785,7 @@
     </div>
 
     <script>
-        // بيانات تخزين مؤقتة للأنشطة
+        // بيانات تخزين مؤقتة للصور
         const portfolioData = {
             arabic: [],
             english: [],
@@ -1028,191 +795,78 @@
             activities: []
         };
 
-        // إظهار نموذج إضافة نشاط
+        // إظهار نموذج إضافة صورة
         function showAddForm(subject) {
             document.getElementById(`${subject}-form`).classList.remove('hidden');
-            document.getElementById(`${subject}-date`).value = new Date().toISOString().split('T')[0];
-            
-            // إعداد استماع لحدث تغيير الملف
-            setupFileInput(subject);
         }
 
-        // إعداد استماع لحدث تغيير الملف
-        function setupFileInput(subject) {
-            const fileInput = document.getElementById(`${subject}-file`);
-            const fileNameElement = document.getElementById(`${subject}-file-name`);
-            const previewContainer = document.getElementById(`${subject}-preview-container`);
-            const previewImage = document.getElementById(`${subject}-preview`);
-            
-            if (fileInput) {
-                fileInput.onchange = function(e) {
-                    const file = e.target.files[0];
-                    if (file) {
-                        // عرض اسم الملف
-                        fileNameElement.textContent = file.name;
-                        fileNameElement.style.display = 'block';
-                        
-                        // عرض معاينة الصورة
-                        const reader = new FileReader();
-                        reader.onload = function(e) {
-                            previewImage.src = e.target.result;
-                            previewContainer.style.display = 'block';
-                        };
-                        reader.readAsDataURL(file);
-                        
-                        // إخفاء رسالة الخطأ
-                        const fileError = document.getElementById(`${subject}-file-error`);
-                        if (fileError) fileError.style.display = 'none';
-                    }
-                };
-            }
-        }
-
-        // إخفاء نموذج إضافة نشاط
+        // إخفاء نموذج إضافة صورة
         function hideAddForm(subject) {
             document.getElementById(`${subject}-form`).classList.add('hidden');
-            resetForm(subject);
-        }
-
-        // إعادة تعيين نموذج
-        function resetForm(subject) {
             document.getElementById(`${subject}-title`).value = '';
             document.getElementById(`${subject}-description`).value = '';
-            
-            const fileInput = document.getElementById(`${subject}-file`);
-            if (fileInput) fileInput.value = '';
-            
-            document.getElementById(`${subject}-file-name`).textContent = '';
-            document.getElementById(`${subject}-file-name`).style.display = 'none';
-            document.getElementById(`${subject}-preview-container`).style.display = 'none';
-            document.getElementById(`${subject}-preview`).src = '';
-            document.getElementById(`${subject}-date`).value = new Date().toISOString().split('T')[0];
-            
-            // إخفاء رسائل الخطأ والنجاح
-            document.getElementById(`${subject}-title-error`).style.display = 'none';
-            document.getElementById(`${subject}-file-error`).style.display = 'none';
-            document.getElementById(`${subject}-success`).style.display = 'none';
+            document.getElementById(`${subject}-url`).value = '';
         }
 
-        // التحقق من صحة النموذج
-        function validateForm(subject) {
-            const title = document.getElementById(`${subject}-title`).value.trim();
-            const fileInput = document.getElementById(`${subject}-file`);
+        // إضافة صورة جديدة
+        function addImage(subject) {
+            const title = document.getElementById(`${subject}-title`).value;
+            const description = document.getElementById(`${subject}-description`).value;
+            const url = document.getElementById(`${subject}-url`).value;
             
-            let isValid = true;
-            
-            // التحقق من العنوان
-            if (!title) {
-                document.getElementById(`${subject}-title-error`).style.display = 'block';
-                isValid = false;
-            } else {
-                document.getElementById(`${subject}-title-error`).style.display = 'none';
-            }
-            
-            // التحقق من الصورة
-            if (!fileInput || !fileInput.files || fileInput.files.length === 0) {
-                document.getElementById(`${subject}-file-error`).style.display = 'block';
-                isValid = false;
-            } else {
-                document.getElementById(`${subject}-file-error`).style.display = 'none';
-            }
-            
-            return isValid;
-        }
-
-        // إضافة نشاط جديد
-        function addActivity(subject) {
-            // التحقق من صحة النموذج
-            if (!validateForm(subject)) {
+            if (!title.trim() || !url.trim()) {
                 return;
             }
             
-            const title = document.getElementById(`${subject}-title`).value;
-            const description = document.getElementById(`${subject}-description`).value;
-            const fileInput = document.getElementById(`${subject}-file`);
-            const date = document.getElementById(`${subject}-date`).value;
+            // استخدام التاريخ الحالي
+            const activityDate = new Date();
+            const formattedDate = activityDate.toLocaleDateString('ar-SA', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
             
-            // استخدام تاريخ اليوم إذا لم يتم إدخال تاريخ
-            const activityDate = date || new Date().toISOString().split('T')[0];
+            // إضافة النشاط للبيانات
+            portfolioData[subject].push({ 
+                title, 
+                description: description || 'لا يوجد وصف مفصل',
+                url, 
+                date: formattedDate 
+            });
             
-            // إنشاء معرف فريد للنشاط
-            const activityId = Date.now() + Math.random().toString(36).substr(2, 9);
+            // تحديث العرض
+            updateImages(subject);
             
-            // قراءة الصورة وتحويلها إلى Base64
-            const file = fileInput.files[0];
-            const reader = new FileReader();
-            
-            reader.onload = function(e) {
-                const imageUrl = e.target.result;
-                
-                // إضافة النشاط للبيانات
-                portfolioData[subject].push({ 
-                    id: activityId,
-                    title, 
-                    description: description || (subject === 'english' ? 'No description provided' : 'لا يوجد وصف مفصل'),
-                    imageUrl,
-                    date: activityDate 
-                });
-                
-                // تحديث العرض
-                updateImages(subject);
-                
-                // إظهار رسالة النجاح
-                const successMsg = document.getElementById(`${subject}-success`);
-                successMsg.style.display = 'block';
-                successMsg.textContent = subject === 'english' ? 'Activity added successfully!' : 'تم إضافة النشاط بنجاح!';
-                
-                // إخفاء النموذج بعد ثانية
-                setTimeout(() => {
-                    hideAddForm(subject);
-                }, 1500);
-            };
-            
-            reader.onerror = function() {
-                alert(subject === 'english' ? 'Error reading image file' : 'خطأ في قراءة ملف الصورة');
-            };
-            
-            reader.readAsDataURL(file);
+            // إخفاء النموذج وإعادة تعيين الحقول
+            hideAddForm(subject);
         }
 
-        // تحديث عرض الأنشطة
+        // تحديث عرض الصور
         function updateImages(subject) {
             const container = document.getElementById(`${subject}-images`);
             const emptyMessage = document.getElementById(`${subject}-empty`);
             const countElement = document.getElementById(`${subject}-count`);
-            const counterElement = document.getElementById(`${subject}-counter`);
             
             container.innerHTML = '';
             
             if (portfolioData[subject].length === 0) {
                 emptyMessage.style.display = 'block';
-                countElement.textContent = subject === 'english' ? 'No activities added yet' : 'لا توجد أنشطة مضافة بعد';
-                counterElement.textContent = '0';
+                countElement.textContent = 'لا توجد أنشطة مضافة بعد';
             } else {
                 emptyMessage.style.display = 'none';
-                countElement.textContent = `${portfolioData[subject].length} ${subject === 'english' ? 'activity' : 'نشاط'}`;
-                counterElement.textContent = portfolioData[subject].length;
+                countElement.textContent = `${portfolioData[subject].length} نشاط`;
                 
                 portfolioData[subject].forEach((item, index) => {
                     const imageItem = document.createElement('div');
                     imageItem.className = 'image-item';
-                    imageItem.id = `activity-${subject}-${item.id}`;
                     imageItem.innerHTML = `
                         <div class="image-container">
-                            <img src="${item.imageUrl}" alt="${item.title}" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzFhNTI3NiIvPjx0ZXh0IHg9IjI1MCIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiNmZmZmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj7Yp9mE2K/Yp9ixINin2YTYs9mE2KfYqjwvdGV4dD48L3N2Zz4='">
+                            <img src="${item.url}" alt="${item.title}" onerror="this.src='https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'">
                         </div>
                         <div class="image-caption">
                             <div class="image-title">${item.title}</div>
                             <div class="image-description">${item.description}</div>
-                            <div class="image-actions">
-                                <button class="action-btn edit-btn" onclick="editActivity('${subject}', '${item.id}')">
-                                    <i class="fa fa-edit"></i> ${subject === 'english' ? 'Edit' : 'تعديل'}
-                                </button>
-                                <button class="action-btn delete-btn" onclick="deleteActivity('${subject}', '${item.id}')">
-                                    <i class="fa fa-trash"></i> ${subject === 'english' ? 'Delete' : 'حذف'}
-                                </button>
-                            </div>
-                            <div class="image-date">${formatDate(item.date)}</div>
+                            <div class="image-date">${item.date}</div>
                         </div>
                     `;
                     container.appendChild(imageItem);
@@ -1220,197 +874,67 @@
             }
         }
 
-        // حذف نشاط
-        function deleteActivity(subject, activityId) {
-            const confirmMsg = subject === 'english' 
-                ? 'Are you sure you want to delete this activity?' 
-                : 'هل أنت متأكد من حذف هذا النشاط؟';
-            
-            if (confirm(confirmMsg)) {
-                portfolioData[subject] = portfolioData[subject].filter(item => item.id !== activityId);
-                updateImages(subject);
-            }
-        }
-
-        // تعديل نشاط
-        function editActivity(subject, activityId) {
-            const activity = portfolioData[subject].find(item => item.id === activityId);
-            if (!activity) return;
-            
-            // ملء النموذج بالقيم الحالية
-            document.getElementById(`${subject}-title`).value = activity.title;
-            document.getElementById(`${subject}-description`).value = activity.description;
-            document.getElementById(`${subject}-date`).value = activity.date;
-            
-            // عرض الصورة الحالية
-            const previewContainer = document.getElementById(`${subject}-preview-container`);
-            const previewImage = document.getElementById(`${subject}-preview`);
-            const fileNameElement = document.getElementById(`${subject}-file-name`);
-            
-            previewImage.src = activity.imageUrl;
-            previewContainer.style.display = 'block';
-            fileNameElement.textContent = subject === 'english' ? 'Current image' : 'الصورة الحالية';
-            fileNameElement.style.display = 'block';
-            
-            // إظهار النموذج
-            document.getElementById(`${subject}-form`).classList.remove('hidden');
-            
-            // تغيير زر الإضافة إلى زر التحديث
-            const submitBtn = document.querySelector(`#${subject}-form .submit-btn`);
-            submitBtn.innerHTML = subject === 'english' 
-                ? '<i class="fa fa-save"></i> Update Activity' 
-                : '<i class="fa fa-save"></i> تحديث النشاط';
-            
-            // إزالة الأحداث السابقة وإضافة حدث التحديث
-            const newSubmitBtn = submitBtn.cloneNode(true);
-            submitBtn.parentNode.replaceChild(newSubmitBtn, submitBtn);
-            
-            newSubmitBtn.onclick = function() {
-                updateActivity(subject, activityId);
-            };
-        }
-
-        // تحديث نشاط
-        function updateActivity(subject, activityId) {
-            // التحقق من صحة النموذج
-            if (!validateForm(subject)) {
-                return;
-            }
-            
-            const title = document.getElementById(`${subject}-title`).value;
-            const description = document.getElementById(`${subject}-description`).value;
-            const fileInput = document.getElementById(`${subject}-file`);
-            const date = document.getElementById(`${subject}-date`).value;
-            
-            const activityIndex = portfolioData[subject].findIndex(item => item.id === activityId);
-            if (activityIndex === -1) return;
-            
-            // تحديث البيانات الأساسية
-            portfolioData[subject][activityIndex].title = title;
-            portfolioData[subject][activityIndex].description = description || 
-                (subject === 'english' ? 'No description provided' : 'لا يوجد وصف مفصل');
-            portfolioData[subject][activityIndex].date = date || new Date().toISOString().split('T')[0];
-            
-            // تحديث الصورة إذا تم رفع صورة جديدة
-            if (fileInput.files && fileInput.files[0]) {
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    portfolioData[subject][activityIndex].imageUrl = e.target.result;
-                    updateImages(subject);
-                    showSuccessMessage(subject, true);
-                };
-                reader.onerror = function() {
-                    alert(subject === 'english' ? 'Error reading image file' : 'خطأ في قراءة ملف الصورة');
-                };
-                reader.readAsDataURL(fileInput.files[0]);
-            } else {
-                updateImages(subject);
-                showSuccessMessage(subject, true);
-            }
-        }
-
-        // إظهار رسالة النجاح
-        function showSuccessMessage(subject, isUpdate = false) {
-            const successMsg = document.getElementById(`${subject}-success`);
-            if (isUpdate) {
-                successMsg.textContent = subject === 'english' 
-                    ? 'Activity updated successfully!' 
-                    : 'تم تحديث النشاط بنجاح!';
-            } else {
-                successMsg.textContent = subject === 'english' 
-                    ? 'Activity added successfully!' 
-                    : 'تم إضافة النشاط بنجاح!';
-            }
-            successMsg.style.display = 'block';
-            
-            // إخفاء النموذج بعد ثانية
-            setTimeout(() => {
-                hideAddForm(subject);
-            }, 1500);
-        }
-
-        // تنسيق التاريخ
-        function formatDate(dateString) {
-            const date = new Date(dateString);
-            return date.toLocaleDateString('ar-SA', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-            });
-        }
-
-        // إضافة أنشطة افتراضية
-        function addDefaultActivities() {
-            // إنشاء صور افتراضية (SVG) لكل قسم
-            const createDefaultImage = (color, text) => {
-                return `data:image/svg+xml;base64,${btoa(`<svg width="500" height="400" xmlns="http://www.w3.org/2000/svg"><rect width="500" height="400" fill="${color}"/><text x="250" y="200" font-family="Arial" font-size="24" fill="#ffffff" text-anchor="middle" dy=".3em">${text}</text></svg>`)}`;
-            };
-            
-            // أنشطة عربية افتراضية
-            portfolioData.arabic = [
-                {
-                    id: 'arabic1',
-                    title: 'نشاط حرف الراء',
-                    description: 'تعليم حرف الراء من خلال وسائل تعليمية مبتكرة وبطاقات ملونة لتعزيز التعلم البصري',
-                    imageUrl: createDefaultImage('#1a5276', 'نشاط اللغة العربية'),
-                    date: '2023-10-15'
+        // إضافة بيانات تجريبية للعرض
+        function addSampleData() {
+            // بيانات عربية
+            portfolioData.arabic.push(
+                { 
+                    title: 'نشاط حرف الراء مع الطالبات', 
+                    description: 'نشاط تفاعلي لتعليم حرف الراء من خلال وسائل تعليمية مبتكرة، حيث استخدمت بطاقات ملونة وألعاب تعليمية لجذب انتباه الطالبات وتسهيل عملية التعلم.',
+                    url: 'https://images.unsplash.com/photo-1589256469067-ea99122bbdc4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80', 
+                    date: '15 أكتوبر 2023'
                 }
-            ];
+            );
             
-            // أنشطة إنجليزية افتراضية
-            portfolioData.english = [
-                {
-                    id: 'english1',
-                    title: 'Letter A Activity',
-                    description: 'Teaching letter A through interactive games and flashcards to enhance vocabulary',
-                    imageUrl: createDefaultImage('#922b21', 'English Activity'),
-                    date: '2023-11-05'
+            // بيانات إنجليزية
+            portfolioData.english.push(
+                { 
+                    title: 'Letter A activity with students', 
+                    description: 'Interactive activity to teach letter A using flashcards, songs, and games. Students practiced writing the letter and identifying words starting with A.',
+                    url: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80', 
+                    date: '5 نوفمبر 2023'
                 }
-            ];
+            );
             
-            // أنشطة قرآن افتراضية
-            portfolioData.quran = [
-                {
-                    id: 'quran1',
-                    title: 'حفظ سورة الفاتحة',
-                    description: 'تدريب الطالبات على حفظ سورة الفاتحة مع تطبيق أحكام التجويد الأساسية',
-                    imageUrl: createDefaultImage('#196f3d', 'نشاط القرآن الكريم'),
-                    date: '2023-09-25'
+            // بيانات قرآن
+            portfolioData.quran.push(
+                { 
+                    title: 'نشاط حفظ سورة الفاتحة', 
+                    description: 'نشاط جماعي لحفظ سورة الفاتحة باستخدام طريقة التكرار الجماعي والتجويد، مع التركيز على مخارج الحروف وتطبيق أحكام التلاوة.',
+                    url: 'https://images.unsplash.com/photo-1517061493169-4d3f4a35d7b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80', 
+                    date: '25 سبتمبر 2023'
                 }
-            ];
+            );
             
-            // أنشطة رياضيات افتراضية
-            portfolioData.math = [
-                {
-                    id: 'math1',
-                    title: 'جدول الضرب التفاعلي',
-                    description: 'تعليم جدول الضرب من خلال ألعاب تعليمية ومنافسات جماعية لتحفيز الطالبات',
-                    imageUrl: createDefaultImage('#6c3483', 'نشاط الرياضيات'),
-                    date: '2023-11-15'
+            // بيانات رياضيات
+            portfolioData.math.push(
+                { 
+                    title: 'نشاط جدول الضرب', 
+                    description: 'أنشطة تعليمية مبتكرة لجدول الضرب باستخدام الألعاب التعليمية والمنافسات الجماعية، مما ساعد الطالبات على حفظ الجدول بسهولة وسرعة.',
+                    url: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80', 
+                    date: '15 نوفمبر 2023'
                 }
-            ];
+            );
             
-            // أنشطة علوم افتراضية
-            portfolioData.science = [
-                {
-                    id: 'science1',
-                    title: 'تجربة أجزاء النبات',
-                    description: 'تجربة عملية لدراسة أجزاء النبات المختلفة ووظيفة كل جزء في عملية النمو',
-                    imageUrl: createDefaultImage('#9c640c', 'تجربة علمية'),
-                    date: '2023-10-30'
+            // بيانات علوم
+            portfolioData.science.push(
+                { 
+                    title: 'تجربة أجزاء النبات', 
+                    description: 'تجربة عملية لدراسة أجزاء النبات، حيث قامت الطالبات بزراعة نباتات صغيرة ومراقبة نموها وتسجيل التغيرات التي تطرأ عليها يومياً.',
+                    url: 'https://images.unsplash.com/photo-1417733403748-83bbc7c05140?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80', 
+                    date: '30 أكتوبر 2023'
                 }
-            ];
+            );
             
-            // أنشطة المعلمة افتراضية
-            portfolioData.activities = [
-                {
-                    id: 'activities1',
-                    title: 'المشاركة في اليوم الوطني',
-                    description: 'تنظيم فعالية خاصة باليوم الوطني بالمدرسة مع تزيين الفصول وإقامة أنشطة وطنية',
-                    imageUrl: createDefaultImage('#117864', 'نشاط المعلمة'),
-                    date: '2023-09-23'
+            // بيانات نشاطات
+            portfolioData.activities.push(
+                { 
+                    title: 'المشاركة في اليوم الوطني', 
+                    description: 'تنظيم فعالية خاصة باليوم الوطني بالمدرسة، حيث تم تزيين الفصول وإقامة أنشطة وطنية تعزز الانتماء للوطن لدى الطالبات.',
+                    url: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80', 
+                    date: '23 سبتمبر 2023'
                 }
-            ];
+            );
             
             // تحديث جميع الأقسام
             updateImages('arabic');
@@ -1421,27 +945,6 @@
             updateImages('activities');
         }
 
-        // حذف جميع الأنشطة
-        function clearAllActivities() {
-            const confirmMsg = 'هل أنت متأكد من حذف جميع الأنشطة؟';
-            
-            if (confirm(confirmMsg)) {
-                portfolioData.arabic = [];
-                portfolioData.english = [];
-                portfolioData.quran = [];
-                portfolioData.math = [];
-                portfolioData.science = [];
-                portfolioData.activities = [];
-                
-                updateImages('arabic');
-                updateImages('english');
-                updateImages('quran');
-                updateImages('math');
-                updateImages('science');
-                updateImages('activities');
-            }
-        }
-
         // طباعة الملف
         function printPortfolio() {
             window.print();
@@ -1449,19 +952,13 @@
 
         // تهيئة الموقع عند التحميل
         document.addEventListener('DOMContentLoaded', function() {
-            // تعيين تاريخ اليوم كتاريخ افتراضي
-            const today = new Date().toISOString().split('T')[0];
-            document.querySelectorAll('input[type="date"]').forEach(input => {
-                input.value = today;
-            });
-            
-            // إعداد أحداث رفع الملفات لكل قسم
-            ['arabic', 'english', 'quran', 'math', 'science', 'activities'].forEach(subject => {
-                setupFileInput(subject);
-            });
-            
-            // إضافة أنشطة افتراضية عند التحميل
-            addDefaultActivities();
+            // تحديث جميع الأقسام
+            updateImages('arabic');
+            updateImages('english');
+            updateImages('quran');
+            updateImages('math');
+            updateImages('science');
+            updateImages('activities');
         });
     </script>
 </body>
