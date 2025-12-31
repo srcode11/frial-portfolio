@@ -4,16 +4,27 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middleware
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, '..', 'public')));
 app.use(express.json());
 
-// Serve index.html for all routes (SPA)
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+// إعداد CORS
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+    next();
 });
 
-// Start server
+// جميع المسارات ترجع index.html
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
+});
+
+// بدء السيرفر
 app.listen(PORT, () => {
-    console.log(`🚀 Server running on port ${PORT}`);
-    console.log(`🌐 Open: http://localhost:${PORT}`);
+    console.log(`
+    🎓 ملف إنجاز المعلمة فريال الغماري
+    🚀 السيرفر يعمل على البورت: ${PORT}
+    🌐 الرابط: http://localhost:${PORT}
+    ⏰ الوقت: ${new Date().toLocaleString('ar-SA')}
+    `);
 });
