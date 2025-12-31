@@ -3,17 +3,21 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Middleware
-app.use(express.static('public'));
-app.use(express.json());
+// إعداد static files من مجلد public
+app.use(express.static(path.join(__dirname, 'public')));
 
-// Serve index.html for all routes (SPA)
+// جميع المسارات ترجع index.html (للتطبيق ذو الصفحة الواحدة)
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-// Start server
+// بدء السيرفر
 app.listen(PORT, () => {
-    console.log(`🚀 Server running on port ${PORT}`);
-    console.log(`🌐 Open: http://localhost:${PORT}`);
+    console.log(`
+    ===========================================
+    🚀 ملف إنجاز المعلمة فريال الغماري
+    🌐 الموقع يعمل على: http://localhost:${PORT}
+    ⏰ الوقت: ${new Date().toLocaleString('ar-SA')}
+    ===========================================
+    `);
 });
